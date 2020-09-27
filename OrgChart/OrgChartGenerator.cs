@@ -11,6 +11,9 @@ using System.Linq;
 
 namespace OrgChart
 {
+    /// <summary>
+    /// 组织机构图表生成器
+    /// </summary>
     public class OrgChartGenerator:IDisposable
     {
         public OrgChartOption DefaultOption { get; set; }=new OrgChartOption();
@@ -26,8 +29,13 @@ namespace OrgChart
         private List<OrgChartNode> offsetNodes = new List<OrgChartNode>();
         private bool isSampleTree = true;
 
-        public List<OrgChartNode> Nodes { get { return this.nodes;  } }       
+        public List<OrgChartNode> Nodes { get { return this.nodes;  } }
 
+        /// <summary>
+        /// 组织机构图表生成器
+        /// </summary>
+        /// <param name="nodes"></param>
+        /// <param name="option"></param>
         public OrgChartGenerator(List<OrgChartNode> nodes, OrgChartOption option)
         {
             this.nodes = nodes;
@@ -52,6 +60,10 @@ namespace OrgChart
             }
         }         
 
+        /// <summary>
+        /// 生成
+        /// </summary>
+        /// <returns></returns>
         public MemoryStream Generate()
         {
             if(this.rootNode==null)
@@ -343,6 +355,12 @@ namespace OrgChart
             }
         }
 
+        /// <summary>
+        /// 手柄特殊位置
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="changed"></param>
+        /// <returns></returns>
         private Rectangle HandleSpeicalPosition(OrgChartNode node, out bool changed)
         {
             changed = false;

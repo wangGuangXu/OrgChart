@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace OrgChart
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class OrgChartNode
     {
         public string Id { get; set; }

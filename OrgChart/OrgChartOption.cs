@@ -3,61 +3,64 @@ using System.Drawing.Imaging;
 
 namespace OrgChart
 {
+    /// <summary>
+    /// 组织结构图选项
+    /// </summary>
     public class OrgChartOption
     {
         public ImageFormat ImageFormat { get; set; } = ImageFormat.Png;
 
         /// <summary>
-        /// Width of chart.
+        /// 图表宽度 Width of chart.
         /// </summary>
         public int Width { get; set; }
 
         /// <summary>
-        /// Height of height.
+        /// 图表高度 Height of height.
         /// </summary>
         public int Height { get; set; }       
 
         /// <summary>
-        /// Margin of nodes.
+        /// 节点边距 Margin of nodes.
         /// </summary>
 
         public int Margin { get; set; } = 20;
 
         /// <summary>
-        /// Horizontal space of nodes.
+        /// 节点水平间距 Horizontal space of nodes.
         /// </summary>
 
         public int HorizontalSpace { get; set; } = 30;
 
         /// <summary>
-        /// Vertical space of nodes.
+        /// 节点垂直间距 Vertical space of nodes.
         /// </summary>
 
         public int VerticalSpace { get; set; } = 30;
 
         /// <summary>
-        /// Font name of chart.
+        /// 图表字体 Font name of chart.
         /// </summary>
 
         public string FontName { get; set; } = "Times New Roman";
 
         /// <summary>
-        /// Font color of node.
+        /// 节点字体颜色 Font color of node.
         /// </summary>
         public Color FontColor { get; set; } = Color.Black;
 
         /// <summary>
-        /// Font size of node.
+        /// 节点字体大小 Font size of node.
         /// </summary>
         public int FontSize { get; set; } = 10;
 
         /// <summary>
-        /// Connect line color of nodes.
+        /// 节点连接线颜色 Connect line color of nodes.
         /// </summary>
         public Color ConnectLineColor { get; set; } = Color.Black;
 
         /// <summary>
-        /// Connect line width of nodes.
+        /// 节点连接线宽 Connect line width of nodes.
         /// </summary>
 
         public float ConnectLineWidth { get; set; } = 1;
@@ -69,23 +72,23 @@ namespace OrgChart
         public Color BoxBorderColor { get; set; } = Color.Black;
 
         /// <summary>
-        /// Border width of node.
+        /// 节点边框宽度 Border width of node.
         /// </summary>
         public float BoxBorderWidth { get; set; } = 1;
 
         /// <summary>
-        /// Fill color of node.
+        /// 节点填充颜色 Fill color of node.
         /// </summary>
         public Color BoxFillColor { get; set; }
 
         /// <summary>
-        /// Width of node.
+        /// 节点宽度 Width of node.
         /// </summary>
 
         public int BoxWidth { get; set; } = 100;
 
         /// <summary>
-        /// Height of node.
+        /// 节点高度 Height of node.
         /// </summary>
         public int BoxHeight { get; set; } = 35;
 
